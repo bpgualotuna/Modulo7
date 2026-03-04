@@ -1,4 +1,5 @@
 <div class="container">
+    @if (invoice) {
     <div class="card my-5 border-primary">
         <div class="card-header bg-primary text-white text-center">
             <h2 class="m-0">FACTURA</h2>
@@ -22,4 +23,7 @@
             </div>
         </div>
     </div>
+    } @else {
+    <p class="text-center mt-5">Cargando factura...</p>
+    }
 </div>
