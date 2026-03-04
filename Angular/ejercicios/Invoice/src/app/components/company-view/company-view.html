@@ -1,8 +1,12 @@
-<h3>EMPRESA</h3>
-<ul class="list-group">
-    <li class="list-group-item">RUC: {{company.ruc}}</li>
-    <li class="list-group-item">Nombre: {{company.name}}</li>
-    <li class="list-group-item">Direccion: {{company.address.city}},
-        {{company.address.principalStreet}},
-        {{company.address.secondaryStreet}}, {{company.address.code}}</li>
-</ul>
+<div class="card bg-light border-secondary">
+    <div class="card-body">
+        <h3 class="text-secondary text-center border-bottom pb-2">EMPRESA</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light"><strong>RUC:</strong> {{company.ruc}}</li>
+            <li class="list-group-item bg-light"><strong>Nombre:</strong> {{company.name}}</li>
+            <li class="list-group-item bg-light"><strong>Direccion:</strong> {{company.address.city}},
+                {{company.address.principalStreet}},
+                {{company.address.secondaryStreet}}, {{company.address.code}}</li>
+        </ul>
+    </div>
+</div>

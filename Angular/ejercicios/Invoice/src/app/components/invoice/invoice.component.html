@@ -1,23 +1,25 @@
 <div class="container">
-    <div class="card my-5">
-        <div class="card-header">
-            <h2>FACTURA</h2>
+    <div class="card my-5 border-primary">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="m-0">FACTURA</h2>
         </div>
         <div class="card-body">
-            <ul class="list-group">
-                <li class="list-group-item">No. {{invoice.id}}</li>
+            <ul class="list-group mb-4">
+                <li class="list-group-item list-group-item-info"><strong>No.</strong> {{invoice.id}}</li>
             </ul>
-        </div>
-        <div class="row">
-            <div class="col">
-                <app-company-view [company]="invoice.company"></app-company-view>
+
+            <div class="row mb-4">
+                <div class="col-sm-6">
+                    <app-company-view [company]="invoice.company"></app-company-view>
+                </div>
+                <div class="col-sm-6">
+                    <app-customer-view [customer]="invoice.customer"></app-customer-view>
+                </div>
             </div>
-            <div class="col">
-                <app-customer-view [customer]="invoice.customer"></app-customer-view>
+
+            <div>
+                <app-invoice-detail [items]="invoice.items"></app-invoice-detail>
             </div>
-        </div>
-        <div class="my-5">
-            <app-invoice-detail [items]="invoice.items"></app-invoice-detail>
         </div>
     </div>
 </div>

@@ -1,9 +1,13 @@
-<h3>CLIENTE</h3>
-<ul class="list-group">
-    <li class="list-group-item">ID: {{customer.id}}</li>
-    <li class="list-group-item">Nombre: {{customer.name}}</li>
-    <li class="list-group-item">Apellido: {{customer.surname}}</li>
-    <li class="list-group-item">Direccion: {{customer.address.city}},
-        {{customer.address.principalStreet}},
-        {{customer.address.secondaryStreet}}, {{customer.address.code}}</li>
-</ul>
+<div class="card bg-light border-success">
+    <div class="card-body">
+        <h3 class="text-success text-center border-bottom pb-2">CLIENTE</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light"><strong>ID:</strong> {{customer.id}}</li>
+            <li class="list-group-item bg-light"><strong>Nombre:</strong> {{customer.name}}</li>
+            <li class="list-group-item bg-light"><strong>Apellido:</strong> {{customer.surname}}</li>
+            <li class="list-group-item bg-light"><strong>Direccion:</strong> {{customer.address.city}},
+                {{customer.address.principalStreet}},
+                {{customer.address.secondaryStreet}}, {{customer.address.code}}</li>
+        </ul>
+    </div>
+</div>

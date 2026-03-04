@@ -1,13 +1,14 @@
-<table class="table table-striped">
-    <thead>
-        <th>PRODUCTO</th>
-        <th>PRECIO</th>
-        <th>CANTIDAD</th>
+<table class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
+        <tr>
+            <th>PRODUCTO</th>
+            <th>PRECIO</th>
+            <th>CANTIDAD</th>
+        </tr>
     </thead>
     <tbody>
         @for (item of items; track $index) {
         <tr invoice-item [item]="item"></tr>
         }
-
     </tbody>
 </table>
